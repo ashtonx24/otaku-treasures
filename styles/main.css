@@ -1,0 +1,176 @@
+
+/* Base styles */
+html {
+  overflow-y: scroll;
+  scrollbar-gutter: stable;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  background-size: cover;
+  color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+}
+
+/* Headers */
+h2 {
+  font-weight: bold;
+  color: #ffc107; /* Metallic Gold */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* Navbar */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-collapse {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Buttons */
+.button {
+  position: relative;
+  overflow: hidden;
+  background: #00bfff; /* Electric Blue */
+  color: #fff;
+  padding: 0.7em 1.5em;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 191, 255, 0.4);
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #009acb; /* Slightly darker Electric Blue */
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 154, 203, 0.6);
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+
+/* Ripple effect */
+.ripple {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  transform: scale(0);
+  animation: ripple-animation 0.6s linear;
+  pointer-events: none;
+}
+
+@keyframes ripple-animation {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+/* Card style (for merch items) */
+.card {
+  background: linear-gradient(135deg, #3a0f18, #b04153);
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  color: #f8f8f8;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Subtle product glow */
+.card img {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(255, 105, 180, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.card img:hover {
+  transform: scale(1.03);
+}
+
+/* Footer & subtle UI hints */
+footer {
+  background-color: #121212;
+  text-align: center;
+  padding: 1em;
+  font-size: 0.9rem;
+  color: #bbb;
+  border-top: 2px solid #333;
+}
+
+/* Scrollbar styling (optional) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #00bfff; /* Electric Blue */
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: #fdfbfb;
+}
+
+.custom-text-color {
+  color: #8e2de2; /* A gradient-like purple color */
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Adding a subtle shadow for a bit of depth */
+}
+
+/* all themes for card */
+.theme-red {
+  background: linear-gradient(135deg, #3a0f18, #b04153);
+  color: #fefefe;
+}
+.theme-blue {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #f0f0f0;
+}
+.theme-sakura {
+  background: linear-gradient(135deg, #ffd1dc, #fcb7b7);
+  color: #222;
+}
+.theme-demon {
+  background: linear-gradient(135deg, #1a0004, #450920);
+  color: #eee;
+}
+
+.button-category:hover{
+  color:#000 !important;
+}
+
+em{
+  color: #fff;
+}
+
+em a:active, em a:visited, em a:any-link{
+  text-decoration: none;
+  color: #ffc107;
+}
+
+@media (max-width:576px){
+  .explore-cat{
+    margin-bottom: 12px;
+  }
+}
+
+.card-footer-note {
+  color: #dddddd;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
