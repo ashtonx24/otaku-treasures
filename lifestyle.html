@@ -12,7 +12,10 @@
     <link href="/styles/main.css" rel="stylesheet" />
 
     <!-- Canonical Link (avoid duplicate content issues) -->
-    <link rel="canonical" href="https://otaku-treasures.netlify.app/lifestyle" />
+    <link
+      rel="canonical"
+      href="https://otaku-treasures.netlify.app/lifestyle"
+    />
 
     <!-- SEO Meta -->
     <meta
@@ -92,39 +95,57 @@
             class="collapse navbar-collapse justify-content-end"
             id="navbarNav"
           >
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link text-white" href="/index.html">Home</a>
-            </li>
-          
-            <!-- Merch Dropdown -->
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle text-white"
-                href="#"
-                id="merchDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Merch
-              </a>
-              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="merchDropdown">
-                <li><a class="dropdown-item" href="/merch/figures.html">Figures</a></li>
-                <li><a class="dropdown-item" href="/merch/manga.html">Manga Picks</a></li>
-                <li><a class="dropdown-item" href="/lifestyle.html">Otaku Lifestyle</a></li>
-                <li><a class="dropdown-item" href="/news.html">Seasonal Picks</a></li>
-              </ul>
-            </li>
-          
-            <li class="nav-item">
-              <a class="nav-link text-white" href="/about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="/contact.html">Contact</a>
-            </li>
-          </ul>
-          
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="/index.html">Home</a>
+              </li>
+
+              <!-- Merch Dropdown -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-white"
+                  href="#"
+                  id="merchDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Merch
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-menu-dark"
+                  aria-labelledby="merchDropdown"
+                >
+                  <li>
+                    <a class="dropdown-item" href="/merch/figures.html"
+                      >Figures</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/merch/manga.html"
+                      >Manga Picks</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/lifestyle.html"
+                      >Otaku Lifestyle</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/news.html"
+                      >Seasonal Picks</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-white" href="/about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="/contact.html">Contact</a>
+              </li>
+            </ul>
           </div>
         </nav>
       </div>
@@ -135,11 +156,14 @@
         <h2 class="text-center mb-4">Otaku Lifestyle</h2>
         <div class="row g-4">
           <div class="col-md-4">
-            <div class="card h-100 theme-sakura">
+            <div
+              class="card h-100 theme-sakura"
+              onclick="openOverlay({ title: 'Anya Spy x Family Anime Character Mug', description: 'Wake up in style with Anya\'s iconic sass! Sip your morning brew and channel the coolest kid from Spy x Family.', link: 'https://amzn.to/3YDL2E0' })"
+            >
               <img
-                src="https://m.media-amazon.com/images/I/51jJoZQqVQL._SX522_.jpg"
-                class="card-img-top"
                 alt="Anya Spy x Family Anime Character Mug"
+                class="card-img-top"
+                src="https://m.media-amazon.com/images/I/51jJoZQqVQL._SX522_.jpg"
               />
               <div class="card-body">
                 <h5 class="card-title">
@@ -157,98 +181,218 @@
                   target="_blank"
                   >Buy Now</a
                 >
-                <small class="text-muted d-block mt-2"
-                  >Design by BL Bhavya Lifestyles — inspired by Spy x
-                  Family</small
+                <small class="text-muted d-block mt-2">
+                  Design by BL Bhavya Lifestyles — inspired by Spy x Family
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="card h-100 theme-demon"
+              onclick="openOverlay({ title: 'Luffy Gear 5 Wall Poster', description: 'Bring the hilarious chaos of Luffy’s Gear 5 transformation into your room! A punch of laughter and freedom on your wall.', link: 'https://amzn.to/4cNpydK' })"
+            >
+              <img
+                alt="Luffy Gear 5 Wall Poster"
+                class="card-img-top"
+                src="https://m.media-amazon.com/images/I/91kQrvk76bL._SX522_.jpg"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Luffy Gear 5 Wall Poster</h5>
+                <p class="card-text">
+                  Convert your home into an anime-haven with these manga
+                  posters. Make the anime characters and tales come alive on the
+                  walls of your room with our anime posters.
+                </p>
+                <a
+                  class="btn btn-warning w-100 button"
+                  href="https://amzn.to/4cNpydK"
+                  target="_blank"
+                  >Buy Now</a
+                >
+                <small class="card-footer-note d-block mt-2"
+                  >© CLICKEDIN® — Wall Poster Design</small
                 >
               </div>
             </div>
           </div>
-          
-    <div class="col-md-4">
-      <div class="card h-100 theme-demon">
-        <img src="https://m.media-amazon.com/images/I/91kQrvk76bL._SX522_.jpg" class="card-img-top" alt="Luffy Gear 5 Wall Poster" />
-        <div class="card-body">
-          <h5 class="card-title">Luffy Gear 5 Wall Poster</h5>
-          <p class="card-text">Convert your home into an anime-haven with these manga posters. Make the anime characters and tales come alive on the walls of your room with our anime posters.</p>
-          <a class="btn btn-warning w-100 button" href="https://amzn.to/4cNpydK" target="_blank">Buy Now</a>
-          <small class="card-footer-note d-block mt-2">© CLICKEDIN® — Wall Poster Design</small>
-        </div>
-      </div>
-    </div>
-    
-    <div class="col-md-4">
-      <div class="card h-100 theme-blue">
-        <img src="https://m.media-amazon.com/images/I/61HMOecUB5L._SX569_.jpg" class="card-img-top" alt="Daiyamondo Anime Rotating Metal Keychain" />
-        <div class="card-body">
-          <h5 class="card-title">Daiyamondo Anime Rotating Metal Keychain</h5>
-          <p class="card-text">Durable 360° spinning metal keychain featuring iconic anime designs. A stylish and functional accessory for fans.</p>
-          <a class="btn btn-warning w-100 button" href="https://amzn.to/3ELrhDH" target="_blank">Buy Now</a>
-          <small class="card-footer-note d-block mt-2">© Daiyamondo</small>
-        </div>
-      </div>
-    </div>
-    
-    <div class="col-md-4">
-      <div class="card h-100 theme-sakura">
-        <img src="https://f.media-amazon.com/images/I/61G6Tg6ZL8L._SX679_.jpg" class="card-img-top" alt="ASBK Anime Character Keychain Set" />
-        <div class="card-body">
-          <h5 class="card-title">ASBK Anime Character Keychain Set</h5>
-          <p class="card-text">Set of Miniature Katanas for your collection or hanging to your belongings. That too at a reasonable price.</p>
-          <a class="btn btn-warning w-100 button" href="https://amzn.to/3EnboDz" target="_blank">Buy Now</a>
-          <small class="text-muted d-block mt-2">© ASBK</small>
-        </div>
-      </div>
-    </div>
-    
-    <div class="col-md-4">
-      <div class="card h-100 theme-red">
-        <img src="https://m.media-amazon.com/images/I/71xTmS0ffyL._SX679_.jpg" class="card-img-top" alt="Demon Slayer Tanjiro Laptop Backpack (35L)" />
-        <div class="card-body">
-          <h5 class="card-title">Demon Slayer Tanjiro Laptop Backpack (35L)</h5>
-          <p class="card-text">Multi-storage backpack featuring Tanjiro from Demon Slayer. Suitable for school, college, and travel.</p>
-          <a class="btn btn-warning w-100 button" href="https://amzn.to/3S3thu5" target="_blank">Buy Now</a>
-          <small class="card-footer-note d-block mt-2">© Bagbros</small>
-        </div>
-      </div>
-    </div>
-    
-    <div class="col-md-4">
-      <div class="card h-100 theme-blue">
-        <img src="https://m.media-amazon.com/images/I/51KxwlxgTHL._SX679_.jpg" class="card-img-top" alt="One Piece Ship Steering Wheel Spinning Keychain" />
-        <div class="card-body">
-          <h5 class="card-title">One Piece Ship Steering Wheel Spinning Keychain</h5>
-          <p class="card-text">Stainless steel keychain modeled after the One Piece ship's steering wheel. Features a spinning mechanism.</p>
-          <a class="btn btn-warning w-100 button" href="https://amzn.to/3YdXPwQ" target="_blank">Buy Now</a>
-          <small class="card-footer-note d-block mt-2">© Arkanum</small>
-        </div>
-      </div>
-    </div>
-    
-    <div class="col-md-4">
-      <div class="card h-100 theme-red">
-        <img src="https://m.media-amazon.com/images/I/51d46Ss8c5L._SX300_SY300_QL70_FMwebp_.jpg" class="card-img-top" alt="Anime Character Multi-Colour Storage Stationery Bag" />
-        <div class="card-body">
-          <h5 class="card-title">Anime Character Multi-Colour Storage Stationery Bag</h5>
-          <p class="card-text">This vibrant, multi-colour storage bag features popular anime characters, making it a perfect accessory for students and anime enthusiasts. It's spacious enough to hold all your stationery essentials and adds a touch of fandom to your daily routine.</p>
-          <a class="btn btn-warning w-100 button" href="https://amzn.to/3GpEfYk" target="_blank">Buy Now</a>
-          <small class="card-footer-note d-block mt-2">© SUBADIKA</small>
-        </div>
-      </div>
-    </div>
-    
-    <div class="col-md-4">
-      <div class="card h-100 theme-blue">
-        <img src="https://m.media-amazon.com/images/I/71jOo69rK9L._SX679_.jpg" class="card-img-top" alt="Demon Slayer Anime Character Keychain, Metal Ring with Blue Water Effect Design" />
-        <div class="card-body">
-          <h5 class="card-title">Demon Slayer Anime Character Keychain, Metal Ring with Blue Water Effect Design</h5>
-          <p class="card-text">Add a touch of anime flair to your everyday carry with this stunning Demon Slayer keychain. The eye-catching design features a dynamic action scene with dramatic blue water effects swirling around the character in combat stance.</p>
-          <a class="btn btn-warning w-100 button" href="https://amzn.to/4jodBh3" target="_blank">Buy Now</a>
-          <small class="card-footer-note d-block mt-2">© Kumar Enterprises</small>
-        </div>
-      </div>
-    </div>
-    <!-- BLOG_POSTS_HERE -->
+          <div class="col-md-4">
+            <div
+              class="card h-100 theme-blue"
+              onclick="openOverlay({ title: 'Daiyamondo Anime Rotating Metal Keychain', description: 'Carry your love for anime everywhere with this dynamic, spin-ready keychain. Practical, sturdy, and stylishly geeky.', link: 'https://amzn.to/3ELrhDH' })"
+            >
+              <img
+                alt="Daiyamondo Anime Rotating Metal Keychain"
+                class="card-img-top"
+                src="https://m.media-amazon.com/images/I/61HMOecUB5L._SX569_.jpg"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Daiyamondo Anime Rotating Metal Keychain
+                </h5>
+                <p class="card-text">
+                  Durable 360° spinning metal keychain featuring iconic anime
+                  designs. A stylish and functional accessory for fans.
+                </p>
+                <a
+                  class="btn btn-warning w-100 button"
+                  href="https://amzn.to/3ELrhDH"
+                  target="_blank"
+                  >Buy Now</a
+                >
+                <small class="card-footer-note d-block mt-2"
+                  >© Daiyamondo</small
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="card h-100 theme-sakura"
+              onclick="openOverlay({ title: 'ASBK Anime Character Keychain Set', description: 'Mini katanas, maximum swag. Flaunt your anime loyalty with this detailed miniature blade set — perfect for bags and keys.', link: 'https://amzn.to/3EnboDz' })"
+            >
+              <img
+                alt="ASBK Anime Character Keychain Set"
+                class="card-img-top"
+                src="https://f.media-amazon.com/images/I/61G6Tg6ZL8L._SX679_.jpg"
+              />
+              <div class="card-body">
+                <h5 class="card-title">ASBK Anime Character Keychain Set</h5>
+                <p class="card-text">
+                  Set of Miniature Katanas for your collection or hanging to
+                  your belongings. That too at a reasonable price.
+                </p>
+                <a
+                  class="btn btn-warning w-100 button"
+                  href="https://amzn.to/3EnboDz"
+                  target="_blank"
+                  >Buy Now</a
+                >
+                <small class="text-muted d-block mt-2">© ASBK</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="card h-100 theme-red"
+              onclick="openOverlay({ title: 'Demon Slayer Tanjiro Laptop Backpack (35L)', description: 'Merge utility with fandom! This multi-storage Tanjiro backpack is built for travel, study, and showing your slayer spirit.', link: 'https://amzn.to/3S3thu5' })"
+            >
+              <img
+                alt="Demon Slayer Tanjiro Laptop Backpack (35L)"
+                class="card-img-top"
+                src="https://m.media-amazon.com/images/I/71xTmS0ffyL._SX679_.jpg"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Demon Slayer Tanjiro Laptop Backpack (35L)
+                </h5>
+                <p class="card-text">
+                  Multi-storage backpack featuring Tanjiro from Demon Slayer.
+                  Suitable for school, college, and travel.
+                </p>
+                <a
+                  class="btn btn-warning w-100 button"
+                  href="https://amzn.to/3S3thu5"
+                  target="_blank"
+                  >Buy Now</a
+                >
+                <small class="card-footer-note d-block mt-2">© Bagbros</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="card h-100 theme-blue"
+              onclick="openOverlay({ title: 'One Piece Ship Steering Wheel Spinning Keychain', description: 'Set sail every day with this elegant One Piece wheel keychain — perfect for dreamers and pirates alike.', link: 'https://amzn.to/3YdXPwQ' })"
+            >
+              <img
+                alt="One Piece Ship Steering Wheel Spinning Keychain"
+                class="card-img-top"
+                src="https://m.media-amazon.com/images/I/51KxwlxgTHL._SX679_.jpg"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  One Piece Ship Steering Wheel Spinning Keychain
+                </h5>
+                <p class="card-text">
+                  Stainless steel keychain modeled after the One Piece ship's
+                  steering wheel. Features a spinning mechanism.
+                </p>
+                <a
+                  class="btn btn-warning w-100 button"
+                  href="https://amzn.to/3YdXPwQ"
+                  target="_blank"
+                  >Buy Now</a
+                >
+                <small class="card-footer-note d-block mt-2">© Arkanum</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="card h-100 theme-red"
+              onclick="openOverlay({ title: 'Anime Character Multi-Colour Storage Stationery Bag', description: 'Color your daily hustle with anime energy. A vivid, playful stationery pouch for creative souls.', link: 'https://amzn.to/3GpEfYk' })"
+            >
+              <img
+                alt="Anime Character Multi-Colour Storage Stationery Bag"
+                class="card-img-top"
+                src="https://m.media-amazon.com/images/I/51d46Ss8c5L._SX300_SY300_QL70_FMwebp_.jpg"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Anime Character Multi-Colour Storage Stationery Bag
+                </h5>
+                <p class="card-text">
+                  This vibrant, multi-colour storage bag features popular anime
+                  characters, making it a perfect accessory for students and
+                  anime enthusiasts. It's spacious enough to hold all your
+                  stationery essentials and adds a touch of fandom to your daily
+                  routine.
+                </p>
+                <a
+                  class="btn btn-warning w-100 button"
+                  href="https://amzn.to/3GpEfYk"
+                  target="_blank"
+                  >Buy Now</a
+                >
+                <small class="card-footer-note d-block mt-2">© SUBADIKA</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="card h-100 theme-blue"
+              onclick="openOverlay({ title: 'Demon Slayer Anime Character Keychain, Metal Ring with Blue Water Effect Design', description: 'Add a touch of anime flair to your everyday carry with this stunning Demon Slayer keychain. The eye-catching design features a dynamic action scene with dramatic blue water effects swirling around the character in combat stance.', link: 'https://amzn.to/4jodBh3' })"
+            >
+              <img
+                alt="Demon Slayer Anime Character Keychain, Metal Ring with Blue Water Effect Design"
+                class="card-img-top"
+                src="https://m.media-amazon.com/images/I/71jOo69rK9L._SX679_.jpg"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Demon Slayer Anime Character Keychain, Metal Ring with Blue
+                  Water Effect Design
+                </h5>
+                <p class="card-text">
+                  Add a touch of anime flair to your everyday carry with this
+                  stunning Demon Slayer keychain. The eye-catching design
+                  features a dynamic action scene with dramatic blue water
+                  effects swirling around the character in combat stance.
+                </p>
+                <a
+                  class="btn btn-warning w-100 button"
+                  href="https://amzn.to/4jodBh3"
+                  target="_blank"
+                  >Buy Now</a
+                >
+                <small class="card-footer-note d-block mt-2"
+                  >© Kumar Enterprises</small
+                >
+              </div>
+            </div>
+          </div>
+          <!-- BLOG_POSTS_HERE -->
         </div>
       </section>
     </main>
@@ -261,7 +405,33 @@
         Otaku Treasures. Powered by fandom.
       </p>
     </footer>
+    <div id="productOverlay" class="product-overlay">
+      <div class="overlay-content">
+        <span class="overlay-close" onclick="closeOverlay()">&times;</span>
+        <h3 id="overlayTitle"></h3>
+        <p id="overlayDescription"></p>
+        <a
+          id="overlayLink"
+          href="#"
+          target="_blank"
+          class="btn btn-warning mt-3"
+          >View on Amazon</a
+        >
+      </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/scripts/main.js"></script>
+    <script>
+      function openOverlay({ title, description, link }) {
+        document.getElementById("overlayTitle").innerText = title;
+        document.getElementById("overlayDescription").innerText = description;
+        document.getElementById("overlayLink").href = link;
+        document.getElementById("productOverlay").style.display = "flex";
+      }
+
+      function closeOverlay() {
+        document.getElementById("productOverlay").style.display = "none";
+      }
+    </script>
   </body>
 </html>

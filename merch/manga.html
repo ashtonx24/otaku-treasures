@@ -13,7 +13,10 @@
     <link href="/styles/main.css" rel="stylesheet" />
 
     <!-- Canonical Link (avoid duplicate content issues) -->
-    <link rel="canonical" href="https://otaku-treasures.netlify.app/merch/manga" />
+    <link
+      rel="canonical"
+      href="https://otaku-treasures.netlify.app/merch/manga"
+    />
 
     <!-- SEO Meta -->
     <meta
@@ -93,144 +96,304 @@
             class="collapse navbar-collapse justify-content-end"
             id="navbarNav"
           >
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link text-white" href="/index.html">Home</a>
-            </li>
-          
-            <!-- Merch Dropdown -->
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle text-white"
-                href="#"
-                id="merchDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Merch
-              </a>
-              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="merchDropdown">
-                <li><a class="dropdown-item" href="/merch/figures.html">Figures</a></li>
-                <li><a class="dropdown-item" href="/merch/manga.html">Manga Picks</a></li>
-                <li><a class="dropdown-item" href="/lifestyle.html">Otaku Lifestyle</a></li>
-                <li><a class="dropdown-item" href="/news.html">Seasonal Picks</a></li>
-              </ul>
-            </li>
-          
-            <li class="nav-item">
-              <a class="nav-link text-white" href="/about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="/contact.html">Contact</a>
-            </li>
-          </ul>
-          
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="/index.html">Home</a>
+              </li>
+
+              <!-- Merch Dropdown -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-white"
+                  href="#"
+                  id="merchDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Merch
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-menu-dark"
+                  aria-labelledby="merchDropdown"
+                >
+                  <li>
+                    <a class="dropdown-item" href="/merch/figures.html"
+                      >Figures</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/merch/manga.html"
+                      >Manga Picks</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/lifestyle.html"
+                      >Otaku Lifestyle</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/news.html"
+                      >Seasonal Picks</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-white" href="/about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="/contact.html">Contact</a>
+              </li>
+            </ul>
           </div>
         </nav>
       </div>
     </header>
     <main class="container py-5">
-      <h2 class="text-center mb-4">Manga Picks</h2>
-      <div class="row g-4">
-        
-    <div class="col-md-4">
-      <div class="card h-100 theme-red">
-        <img src="https://m.media-amazon.com/images/I/71JLTiUrEJL._SY342_.jpg" class="card-img-top" alt="Attack on Titan S1 Part 1 Box Set (Vol. 1–4)" />
-        <div class="card-body">
-          <h5 class="card-title">Attack on Titan S1 Part 1 Box Set (Vol. 1–4)</h5>
-          <p class="card-text">Get started with AoT on a budget! This compact 4-volume set offers an affordable way to dive into the epic saga.</p>
-          <a class="btn btn-warning w-100 button" href="https://amzn.to/3GogNKV" target="_blank">Buy Now</a>
-          <small class="card-footer-note d-block mt-2">© Hajime Isayama / Kodansha (Unofficial Print)</small>
+      <section>
+        <h2 class="text-center mb-4">Manga Picks</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div
+              class="card h-100 theme-red"
+              onclick="openOverlay({ title: 'Attack on Titan S1 Part 1 Box Set (Vol. 1–4)', description: 'Enter the brutal, breathtaking world of Titans. This set launches your Attack on Titan journey with intensity.', link: 'https://amzn.to/3GogNKV' })"
+            >
+              <img
+                alt="Attack on Titan S1 Part 1 Box Set (Vol. 1–4)"
+                class="card-img-top"
+                src="https://m.media-amazon.com/images/I/71JLTiUrEJL._SY342_.jpg"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Attack on Titan S1 Part 1 Box Set (Vol. 1–4)
+                </h5>
+                <p class="card-text">
+                  Get started with AoT on a budget! This compact 4-volume set
+                  offers an affordable way to dive into the epic saga.
+                </p>
+                <a
+                  class="btn btn-warning w-100 button"
+                  href="https://amzn.to/3GogNKV"
+                  target="_blank"
+                  >Buy Now</a
+                >
+                <small class="card-footer-note d-block mt-2"
+                  >© Hajime Isayama / Kodansha (Unofficial Print)</small
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="card h-100 theme-sakura"
+              onclick="openOverlay({ title: 'Attack on Titan S1 Part 2 Box Set (Vol. 5–8)', description: 'Deepen your bond with humanity’s desperate fight. Essential volumes packed with thrilling twists.', link: 'https://amzn.to/42quOR0' })"
+            >
+              <img
+                alt="Attack on Titan S1 Part 2 Box Set (Vol. 5–8)"
+                class="card-img-top"
+                src="https://m.media-amazon.com/images/I/514cAl3NHmL._SX342_SY445_.jpg"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Attack on Titan S1 Part 2 Box Set (Vol. 5–8)
+                </h5>
+                <p class="card-text">
+                  Premium quality for true fans. Includes full-sized official
+                  volumes 5–8 with stunning artwork and top-tier print.
+                </p>
+                <a
+                  class="btn btn-warning w-100 button"
+                  href="https://amzn.to/42quOR0"
+                  target="_blank"
+                  >Buy Now</a
+                >
+                <small class="text-muted d-block mt-2"
+                  >© Hajime Isayama / Kodansha</small
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="card h-100 theme-blue"
+              onclick="openOverlay({ title: 'Your Name, Vol. 1 – Makoto Shinkai', description: 'Witness the magical bond transcending time and space in Makoto Shinkai’s unforgettable love story.', link: 'https://amzn.to/4lH41Yl' })"
+            >
+              <img
+                alt="Your Name, Vol. 1 – Makoto Shinkai"
+                class="card-img-top"
+                src="https://m.media-amazon.com/images/I/419Ctmhv1cL._SY445_SX342_.jpg"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Your Name, Vol. 1 – Makoto Shinkai</h5>
+                <p class="card-text">
+                  A touching start to one of anime's most emotional love
+                  stories. Volume 1 follows Mitsuha and Taki’s surreal
+                  connection across time.
+                </p>
+                <a
+                  class="btn btn-warning w-100 button"
+                  href="https://amzn.to/4lH41Yl"
+                  target="_blank"
+                  >Buy Now</a
+                >
+                <small class="card-footer-note d-block mt-2"
+                  >© Makoto Shinkai / Ranmaru Kotone</small
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="card h-100 theme-sakura"
+              onclick="openOverlay({ title: 'Your Name, Vol. 2 – Makoto Shinkai', description: 'Dive deeper into destiny\'s pull. Volume 2 will leave you wishing on stars and second chances.', link: 'https://amzn.to/44GZXkx' })"
+            >
+              <img
+                alt="Your Name, Vol. 2 – Makoto Shinkai"
+                class="card-img-top"
+                src="https://m.media-amazon.com/images/I/41jzvQGzI5L._SY445_SX342_.jpg"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Your Name, Vol. 2 – Makoto Shinkai</h5>
+                <p class="card-text">
+                  Volume 2 deepens the mystery and emotion as the two souls draw
+                  closer. A beautifully illustrated chapter in this beloved
+                  story.
+                </p>
+                <a
+                  class="btn btn-warning w-100 button"
+                  href="https://amzn.to/44GZXkx"
+                  target="_blank"
+                  >Buy Now</a
+                >
+                <small class="text-muted d-block mt-2"
+                  >© Makoto Shinkai / Ranmaru Kotone</small
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="card h-100 theme-demon"
+              onclick="openOverlay({ title: 'Chainsaw Man, Vol. 1', description: 'Buckle up for bloody chaos and tragic dreams — Denji’s wild ride starts here in brutal fashion.', link: 'https://amzn.to/4m0O27E' })"
+            >
+              <img
+                alt="Chainsaw Man, Vol. 1"
+                class="card-img-top"
+                src="https://m.media-amazon.com/images/I/91mXuRtoS7L._SY385_.jpg"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Chainsaw Man, Vol. 1</h5>
+                <p class="card-text">
+                  Denji's life hits rock bottom—until his pet devil chainsaw
+                  saves him. A brutally brilliant start to the dark and devilish
+                  ride that is Chainsaw Man.
+                </p>
+                <a
+                  class="btn btn-warning w-100 button"
+                  href="https://amzn.to/4m0O27E"
+                  target="_blank"
+                  >Buy Now</a
+                >
+                <small class="card-footer-note d-block mt-2"
+                  >© Tatsuki Fujimoto / Shueisha</small
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="card h-100 theme-blue"
+              onclick="openOverlay({ title: 'Spy x Family Vol. 1 – Tatsuya Endo', description: 'The mission? Build a fake family to save the world. An unforgettable, quirky start to espionage meets slice-of-life.', link: 'https://amzn.to/44ahNfM' })"
+            >
+              <img
+                alt="Spy x Family Vol. 1 – Tatsuya Endo"
+                class="card-img-top"
+                src="https://m.media-amazon.com/images/I/71vMGRog+iL._SY385_.jpg"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Spy x Family Vol. 1 – Tatsuya Endo</h5>
+                <p class="card-text">
+                  An elite spy, a deadly assassin, and a psychic girl walk into
+                  a fake family... and it just works. Volume 1 kicks off this
+                  chaotic, heartwarming mission.
+                </p>
+                <a
+                  class="btn btn-warning w-100 button"
+                  href="https://amzn.to/44ahNfM"
+                  target="_blank"
+                  >Buy Now</a
+                >
+                <small class="card-footer-note d-block mt-2"
+                  >© Tatsuya Endo / Shueisha</small
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="card h-100 theme-demon"
+              onclick="openOverlay({ title: 'Death Note – All-in-One Edition (Tsugumi Ohba)', description: 'Outwit death itself with Light and L. All the mind games, all the tension, in one sleek, heavyweight volume.', link: 'https://amzn.to/44eTPjz' })"
+            >
+              <img
+                alt="Death Note – All-in-One Edition (Tsugumi Ohba)"
+                class="card-img-top"
+                src="https://m.media-amazon.com/images/I/71Ir03Pb37L._SY342_.jpg"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Death Note – All-in-One Edition (Tsugumi Ohba)
+                </h5>
+                <p class="card-text">
+                  All 12 volumes of the psychological masterpiece packed into
+                  one beautifully bound tome. Ideal for collectors and
+                  first-timers alike.
+                </p>
+                <a
+                  class="btn btn-warning w-100 button"
+                  href="https://amzn.to/44eTPjz"
+                  target="_blank"
+                  >Buy Now</a
+                >
+                <small class="card-footer-note d-block mt-2"
+                  >© Tsugumi Ohba / Takeshi Obata / Shueisha</small
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="card h-100 theme-demon"
+              onclick="openOverlay({ title: 'Jujutsu Kaisen Vol. 0 – Gege Akutami', description: 'Before Yuji Itadori, there was Yuta Okkotsu. Discover the darker, haunting beginnings of Jujutsu Kaisen.', link: 'https://amzn.to/448RmqM' })"
+            >
+              <img
+                alt="Jujutsu Kaisen Vol. 0 – Gege Akutami"
+                class="card-img-top"
+                src="https://m.media-amazon.com/images/I/51DWx3EguNL._SY445_SX342_.jpg"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Jujutsu Kaisen Vol. 0 – Gege Akutami</h5>
+                <p class="card-text">
+                  Discover the origin of the curse-slaying sorcery. Vol. 0 sets
+                  the stage for Jujutsu Kaisen’s explosive world — a must-read
+                  for fans of dark shonen action.
+                </p>
+                <a
+                  class="btn btn-warning w-100 button"
+                  href="https://amzn.to/448RmqM"
+                  target="_blank"
+                  >Buy Now</a
+                >
+                <small class="card-footer-note d-block mt-2"
+                  >© Gege Akutami / Shueisha</small
+                >
+              </div>
+            </div>
+          </div>
+          <!-- BLOG_POSTS_HERE -->
         </div>
-      </div>
-    </div>
-    
-    <div class="col-md-4">
-      <div class="card h-100 theme-sakura">
-        <img src="https://m.media-amazon.com/images/I/514cAl3NHmL._SX342_SY445_.jpg" class="card-img-top" alt="Attack on Titan S1 Part 2 Box Set (Vol. 5–8)" />
-        <div class="card-body">
-          <h5 class="card-title">Attack on Titan S1 Part 2 Box Set (Vol. 5–8)</h5>
-          <p class="card-text">Premium quality for true fans. Includes full-sized official volumes 5–8 with stunning artwork and top-tier print.</p>
-          <a class="btn btn-warning w-100 button" href="https://amzn.to/42quOR0" target="_blank">Buy Now</a>
-          <small class="text-muted d-block mt-2">© Hajime Isayama / Kodansha</small>
-        </div>
-      </div>
-    </div>
-    
-    <div class="col-md-4">
-      <div class="card h-100 theme-blue">
-        <img src="https://m.media-amazon.com/images/I/419Ctmhv1cL._SY445_SX342_.jpg" class="card-img-top" alt="Your Name, Vol. 1 – Makoto Shinkai" />
-        <div class="card-body">
-          <h5 class="card-title">Your Name, Vol. 1 – Makoto Shinkai</h5>
-          <p class="card-text">A touching start to one of anime's most emotional love stories. Volume 1 follows Mitsuha and Taki’s surreal connection across time.</p>
-          <a class="btn btn-warning w-100 button" href="https://amzn.to/4lH41Yl" target="_blank">Buy Now</a>
-          <small class="card-footer-note d-block mt-2">© Makoto Shinkai / Ranmaru Kotone</small>
-        </div>
-      </div>
-    </div>
-    
-    <div class="col-md-4">
-      <div class="card h-100 theme-sakura">
-        <img src="https://m.media-amazon.com/images/I/41jzvQGzI5L._SY445_SX342_.jpg" class="card-img-top" alt="Your Name, Vol. 2 – Makoto Shinkai" />
-        <div class="card-body">
-          <h5 class="card-title">Your Name, Vol. 2 – Makoto Shinkai</h5>
-          <p class="card-text">Volume 2 deepens the mystery and emotion as the two souls draw closer. A beautifully illustrated chapter in this beloved story.</p>
-          <a class="btn btn-warning w-100 button" href="https://amzn.to/44GZXkx" target="_blank">Buy Now</a>
-          <small class="text-muted d-block mt-2">© Makoto Shinkai / Ranmaru Kotone</small>
-        </div>
-      </div>
-    </div>
-    
-    <div class="col-md-4">
-      <div class="card h-100 theme-demon">
-        <img src="https://m.media-amazon.com/images/I/91mXuRtoS7L._SY385_.jpg" class="card-img-top" alt="Chainsaw Man, Vol. 1" />
-        <div class="card-body">
-          <h5 class="card-title">Chainsaw Man, Vol. 1</h5>
-          <p class="card-text">Denji's life hits rock bottom—until his pet devil chainsaw saves him. A brutally brilliant start to the dark and devilish ride that is Chainsaw Man.</p>
-          <a class="btn btn-warning w-100 button" href="https://amzn.to/4m0O27E" target="_blank">Buy Now</a>
-          <small class="card-footer-note d-block mt-2">© Tatsuki Fujimoto / Shueisha</small>
-        </div>
-      </div>
-    </div>
-    
-    <div class="col-md-4">
-      <div class="card h-100 theme-blue">
-        <img src="https://m.media-amazon.com/images/I/71vMGRog+iL._SY385_.jpg" class="card-img-top" alt="Spy x Family Vol. 1 – Tatsuya Endo" />
-        <div class="card-body">
-          <h5 class="card-title">Spy x Family Vol. 1 – Tatsuya Endo</h5>
-          <p class="card-text">An elite spy, a deadly assassin, and a psychic girl walk into a fake family... and it just works. Volume 1 kicks off this chaotic, heartwarming mission.</p>
-          <a class="btn btn-warning w-100 button" href="https://amzn.to/44ahNfM" target="_blank">Buy Now</a>
-          <small class="card-footer-note d-block mt-2">© Tatsuya Endo / Shueisha</small>
-        </div>
-      </div>
-    </div>
-    
-    <div class="col-md-4">
-      <div class="card h-100 theme-demon">
-        <img src="https://m.media-amazon.com/images/I/71Ir03Pb37L._SY342_.jpg" class="card-img-top" alt="Death Note – All-in-One Edition (Tsugumi Ohba)" />
-        <div class="card-body">
-          <h5 class="card-title">Death Note – All-in-One Edition (Tsugumi Ohba)</h5>
-          <p class="card-text">All 12 volumes of the psychological masterpiece packed into one beautifully bound tome. Ideal for collectors and first-timers alike.</p>
-          <a class="btn btn-warning w-100 button" href="https://amzn.to/44eTPjz" target="_blank">Buy Now</a>
-          <small class="card-footer-note d-block mt-2">© Tsugumi Ohba / Takeshi Obata / Shueisha</small>
-        </div>
-      </div>
-    </div>
-    
-    <div class="col-md-4">
-      <div class="card h-100 theme-demon">
-        <img src="https://m.media-amazon.com/images/I/51DWx3EguNL._SY445_SX342_.jpg" class="card-img-top" alt="Jujutsu Kaisen Vol. 0 – Gege Akutami" />
-        <div class="card-body">
-          <h5 class="card-title">Jujutsu Kaisen Vol. 0 – Gege Akutami</h5>
-          <p class="card-text">Discover the origin of the curse-slaying sorcery. Vol. 0 sets the stage for Jujutsu Kaisen’s explosive world — a must-read for fans of dark shonen action.</p>
-          <a class="btn btn-warning w-100 button" href="https://amzn.to/448RmqM" target="_blank">Buy Now</a>
-          <small class="card-footer-note d-block mt-2">© Gege Akutami / Shueisha</small>
-        </div>
-      </div>
-    </div>
-    <!-- BLOG_POSTS_HERE -->
-      </div>
+      </section>
     </main>
     <footer class="bg-dark text-white text-center py-4">
       <p class="mb-0">
@@ -241,7 +404,33 @@
         Otaku Treasures. Powered by fandom.
       </p>
     </footer>
+    <div id="productOverlay" class="product-overlay">
+      <div class="overlay-content">
+        <span class="overlay-close" onclick="closeOverlay()">&times;</span>
+        <h3 id="overlayTitle"></h3>
+        <p id="overlayDescription"></p>
+        <a
+          id="overlayLink"
+          href="#"
+          target="_blank"
+          class="btn btn-warning mt-3"
+          >View on Amazon</a
+        >
+      </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/scripts/main.js"></script>
+    <script>
+      function openOverlay({ title, description, link }) {
+        document.getElementById("overlayTitle").innerText = title;
+        document.getElementById("overlayDescription").innerText = description;
+        document.getElementById("overlayLink").href = link;
+        document.getElementById("productOverlay").style.display = "flex";
+      }
+
+      function closeOverlay() {
+        document.getElementById("productOverlay").style.display = "none";
+      }
+    </script>
   </body>
 </html>
