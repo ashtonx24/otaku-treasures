@@ -377,12 +377,49 @@ em a:active, em a:visited, em a:any-link{
   margin-right: 0.55em;
   flex-shrink: 0;
 }
+#cuteFloatingMenu {
+background: rgba(255, 255, 255, 0.7);
+backdrop-filter: blur(8px);
+-webkit-backdrop-filter: blur(8px);
+box-shadow: 0 4px 22px rgba(0, 0, 0, 0.1);
+border: 1px solid rgba(255, 255, 255, 0.4);
+}
 
 @media (max-width: 991px) {
   #cuteMenuContainer {
-    display: none !important;
+    top: auto;
+    bottom: 20px;
+    left: auto;
+    right: 20px;
+    transform: none;
   }
+
+  #cuteMenuBtn {
+    width: 48px;
+    height: 48px;
+    font-size: 1.6rem;
+  }
+
+  #cuteFloatingMenu {
+    top: auto;
+    bottom: 60px;
+    left: auto;
+    right: 0;
+    border-radius: 1rem;
+  }
+
+  #cuteMenuContainer.menu-open {
+    display: block !important;
+  }
+  #cuteFloatingMenu {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 4px 22px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.4);
 }
+}
+
 /* Responsive Design */
 
 section h3 {
